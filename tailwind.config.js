@@ -5,18 +5,18 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   // Themes are used for setting the "tone" of the website. Example (Font and general colors)
   theme: {
-    fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
-    },
+    // fontFamily: {
+    //   sans: ['Graphik', 'sans-serif'],
+    //   serif: ['Merriweather', 'serif'],
+    // },
     extend: {
-      spacing: {
-        '128': '32rem',
-        '144': '36rem',
-      },
-      borderRadius: {
-        '4xl': '2rem',
-      }
+      // spacing: {
+      //   '128': '32rem',
+      //   '144': '36rem',
+      // },
+      // borderRadius: {
+      //   '4xl': '2rem',
+      // }
     }
   },
 
@@ -30,6 +30,7 @@ module.exports = {
 
   // Plugins are used for importing some type of utility, usually in the form of some type of pre built component.
   plugins: [
+    require('@tailwindcss/typography'),
     plugin(function({ addComponents, theme }) {
       const buttons = {
         '.btn': {
