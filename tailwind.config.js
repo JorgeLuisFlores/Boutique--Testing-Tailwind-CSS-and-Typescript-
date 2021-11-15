@@ -2,7 +2,7 @@ const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media', // or 'media' or 'class'
   // Themes are used for setting the "tone" of the website. Example (Font and general colors)
   theme: {
     // fontFamily: {
